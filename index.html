@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App Polaroid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Polaroid Web</h1>
+    <label class="upload-btn">
+      Escolher Foto
+      <input type="file" accept="image/*" id="fileInput" />
+    </label>
+    <input type="text" id="caption" placeholder="Digite uma legenda..." />
+    <div class="canvas-wrapper">
+      <canvas id="canvas" width="400" height="500"></canvas>
+    </div>
+    <button onclick="saveImage()">Salvar Foto</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
